@@ -1,0 +1,368 @@
+/* Universal Styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    color: 	hsl(87, 26%, 23%);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Philosopher', sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    margin: 1rem;
+}
+
+a {
+    color: 	hsl(87, 26%, 23%);
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.logo {
+    width: 10rem;
+    min-width: 160px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+button {
+    margin: 1rem;
+    padding: .5rem 2rem;
+    border: 1px solid 	hsl(86, 27%, 51%);
+    background-color: hsl(86, 27%, 91%);
+    border-radius: .5rem;
+    color: 	hsl(87, 26%, 23%);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+button:hover {
+    border-radius: 1rem;
+    color: 	hsl(86, 27%, 91%);
+    background-color: hsl(87, 26%, 23%);
+    transition: border-radius .5s;
+}
+
+/* Navigation Bar */
+.image-container.background {
+    position: absolute;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: -10;
+}
+
+nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+}
+
+@media only screen and (max-width: 850px) {
+    li {
+        display: block;
+    }
+}
+
+/* Banner */
+.banner .info-container {
+    width: 40%;
+}
+
+.banner .image-container {
+    width: 40%;
+}
+
+.banner h2 {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    align-self: start;
+}
+
+.banner h1 {
+    font-size: 6rem;
+    margin: 0;
+    align-self: start;
+}
+
+@media only screen and (max-width: 850px) {
+    .banner .info-container {
+        width: 70%;
+    }
+
+    .banner .image-container {
+        display: none;
+    }
+}
+
+/* Join Section */
+.join {
+    margin: 2rem 0;
+}
+
+.join .info-container {
+    width: 40%;
+}
+
+.join .image-container {
+    width: 30%;
+}
+
+.join button {
+    align-self: center;
+}
+
+@media only screen and (max-width: 850px) {
+    .join {
+        background-image: url('../images/valeria-nikitina-KhdcqVr0knA-unsplash.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .join .info-container {
+        width: 80%;
+        margin: 2rem 0;
+        padding: 1rem 2rem;
+        background-color: hsla(86, 27%, 91%, 0.8);
+        border-radius: 2rem;
+    }
+
+    .join .image-container {
+        display: none;
+    }
+}
+
+/* Shop Section */
+.shop {
+    margin: 2rem 0;
+    padding: 0 1rem;
+    background-image: url('../images/bg01.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shop h2 {
+    font-size: 2.5rem;
+}
+
+.shop .info-container {
+    width: 40%;
+}
+
+.shop .img-fluid {
+    width: 35%;
+    min-width: 160px;
+}
+
+.shop .img-fluid img {
+    margin-top: -4rem;
+    margin-bottom: -2rem;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1300px) {
+    .shop .img-fluid img {
+        margin-top: -3rem;
+        margin-bottom: -1.5rem;
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+    .shop .info-container {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .shop {
+        flex-direction: column;
+    }
+
+    .shop .info-container {
+        width: 80%;
+    }
+
+    .shop .img-fluid img {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    .shop .img-fluid {
+        width: 50%;
+    }
+}
+
+/* Quote Section */
+.quote {
+    margin: 2rem 0;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    background-image: url('../images/bg02.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quote-box {
+    background-color: hsla(0, 0%, 100%, 0.4);
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 70%;
+}
+
+.quote h2 {
+    text-align: center;
+}
+
+.quote-text {
+    text-align: left;
+}
+
+.quote-author {
+    text-align: right;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 850px) {
+    .quote-box {
+        width: 80%;
+    } 
+}
+
+/* Start Section */
+.start {
+    margin: 2rem 0;
+    padding: 0 1rem;
+    flex-direction: column;
+}
+
+.start p {
+    width: 60%;
+}
+
+@media only screen and (max-width: 850px) {
+    .start p {
+        width: 80%;
+    } 
+}
+
+/* Footer Section */
+footer {
+    margin-top: 2rem;
+    padding: 2rem 0;
+    background-image: url('../images/bg01.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer h3 {
+    margin: 2rem;
+}
+
+footer .left, footer .right {
+    width: 30%;
+    flex-direction: column;
+}
+
+.left .image-container {
+    width: 2rem;
+}
+
+
+.left .social-media.container {
+    width: 100%;
+}
+
+footer .image-container.logo {
+    width: 10%;
+}
+
+@media only screen and (max-width: 850px) {
+    footer .image-container.logo {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer .left, footer .right {
+        width: 80%;
+    }
+
+    footer li {
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+    }
+}
+
