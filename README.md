@@ -16,7 +16,7 @@ Contents
  
  I wanted to practice my knowledge of CSS, HTML and responsive desing.
  
- <a href="https://nutritional-info-94609.firebaseapp.com/" target="_blank">
+ <a href="https://alessandramorita.github.io/Club_Project/" target="_blank">
   <img
     src="./resources/images/homePage.png"
     alt="Club Project Page Image"
