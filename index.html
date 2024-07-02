@@ -1,121 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Plant Club</title>
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link href="./resources/css/index.css" rel="stylesheet" type="text/css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./resources/css/index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="image-container background">
-                <img src="./resources/images/bg01.png">
-            </div>
-            <div class="image-container logo">
-                <img src="./resources/images/logo.png" title="The Plant Club">
-            </div>
-            <ul class="navigation">
-                <li><a href="#">Get Started</a></li>
-                <li><a href="#">What's Inside</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Cart (0)</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="image-container background">
+          <img src="./resources/images/bg01.png" />
+        </div>
+        <div class="image-container logo">
+          <img src="./resources/images/logo.png" title="The Plant Club" />
+        </div>
+
+        <!-- Navigation Bar -->
+        <ul class="navigation">
+          <li><a href="#">Get Started</a></li>
+          <li><a href="#">What's Inside</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Cart (0)</a></li>
+        </ul>
+
+        <!-- Navigation Bar for Small Screen-->
+        <input type="checkbox" id="close" />
+        <p class="menu">Menu</p>
+        <div class="side-menu">
+          <p class="menu-close">x</p>
+          <ul>
+            <li><a href="#">Get Started</a></li>
+            <li><a href="#">What's Inside</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Cart (0)</a></li>
+          </ul>
+        </div>
+
+      </nav>
     </header>
 
     <main>
-        <div class="banner container">
-            <div class="info-container">
-                <h2>Every Plant</h2>
-                <h1>Has A Story</h1>
-                <p>Celebrate new Plant Stories with us each month! We curate more than cute collections of plants, containers & accessories; we lovingly pack your monthly plant box to arrive safely at your door. Add the Premium Potting Kit and you'll receive everything you need to easily assemble and care for your own living decor. Discover what's inside...</p>
-                <div class="button">
-                    <button type="button">Join</button>
-                    <button type="button">Give</button>
-                </div>
-            </div>
-
-            <div class="image-container">
-                <img src="./resources/images/img1.png">
-            </div>
+      <div class="banner container">
+        <div class="info-container">
+          <h2>Every Plant</h2>
+          <h1>Has A Story</h1>
+          <p>
+            Celebrate new Plant Stories with us each month! We curate more than
+            cute collections of plants, containers & accessories; we lovingly
+            pack your monthly plant box to arrive safely at your door. Add the
+            Premium Potting Kit and you'll receive everything you need to easily
+            assemble and care for your own living decor. Discover what's
+            inside...
+          </p>
+          <div class="button">
+            <button type="button">Join</button>
+            <button type="button">Give</button>
+          </div>
         </div>
 
-        <div class="join container">
-            <div class="image-container">
-                <img src="./resources/images/valeria-nikitina-KhdcqVr0knA-unsplash.jpg">
-            </div>
-            <div class="info-container">
-                <h2>For the Love of Plants</h2>
-                <p>We are gardeners, friends, and family, we believe in sharing the beauty of plants. We love our greenhouses and playing in the dirt, but at the root of it all we are plant lovers.</p>
-                <p>Each month's box is assembled as if we were receiving it ourselves. We know what plant lovers dig because we dig plants!</p>
-                <p>When you're ready to share in the excitement and see what our talented staff has planned for the coming months, click the 'join the club' button below.</p>
-                <button type="button">Join the Club!</button>
-            </div>
+        <div class="image-container">
+          <img src="./resources/images/img1.png" />
+        </div>
+      </div>
+
+      <div class="join container">
+        <div class="image-container">
+          <img
+            src="./resources/images/valeria-nikitina-KhdcqVr0knA-unsplash.jpg"
+          />
+        </div>
+        <div class="info-container">
+          <h2>For the Love of Plants</h2>
+          <p>
+            We are gardeners, friends, and family, we believe in sharing the
+            beauty of plants. We love our greenhouses and playing in the dirt,
+            but at the root of it all we are plant lovers.
+          </p>
+          <p>
+            Each month's box is assembled as if we were receiving it ourselves.
+            We know what plant lovers dig because we dig plants!
+          </p>
+          <p>
+            When you're ready to share in the excitement and see what our
+            talented staff has planned for the coming months, click the 'join
+            the club' button below.
+          </p>
+          <button type="button">Join the Club!</button>
+        </div>
+      </div>
+
+      <div class="shop container">
+        <div class="info-container">
+          <h2>Plants, Gifts, & Home Decor</h2>
+          <p>
+            In addition to our monthly plans, The Plant Club offers shopping for
+            our favorite collections, live plants, gifts, & home decor.
+          </p>
+          <button type="button">Shop Now</button>
+        </div>
+        <div class="img-fluid">
+          <img src="./resources/images/img17-2.png" />
+        </div>
+      </div>
+
+      <div class="quote container">
+        <h2>What People Say About Our Plants...</h2>
+        <div class="quote-box">
+          <p class="quote-text">
+            "I've received two boxes so far and I've loved them both. They are
+            packed with extra care and are great additions to my plant hoarding…
+          </p>
+          <p class="quote-author">Julia M.</p>
         </div>
 
-        <div class="shop container">
-            <div class="info-container">
-                <h2>Plants, Gifts, & Home Decor</h2>
-                <p>In addition to our monthly plans, The Plant Club offers shopping for our favorite collections, live plants, gifts, & home decor.</p>
-                <button type="button">Shop Now</button>
-            </div>
-            <div class="img-fluid">
-                <img src="./resources/images/img17-2.png">
-            </div>
+        <div class="quote-box">
+          <p class="quote-text">
+            "I love it! The plant was packaged with so much care, simple and
+            clear instructions and tips for potting and care, and such cute
+            accompaniments."
+          </p>
+          <p class="quote-author">Carlos M.</p>
         </div>
+      </div>
 
-        <div class="quote container">
-            <h2>What People Say About Our Plants...</h2>
-            <div class="quote-box">
-                <p class="quote-text">"I've received two boxes so far and I've loved them both. They are packed with extra care and are great additions to my plant hoarding…</p>
-                <p class="quote-author">Julia M.</p>
-            </div>
-
-            <div class="quote-box">
-                <p class="quote-text">"I love it! The plant was packaged with so much care, simple and clear instructions and tips for potting and care, and such cute accompaniments."</p>
-                <p class="quote-author">Carlos M.</p>
-            </div>
-        </div>
-
-        <div class="start container">
-            <h2>The Plant Club is for all of us!</h2>
-            <p>From the seasoned gardener to the budding young family...or even the busy professional that needs an escape from the norm; The Plant Club is designed to satisfy the growing desire in everyone to make the world around us a more tranquil & beautiful place.  We look forward to you joining our family of plant lovers.</p>
-            <button type="button">Get Start</button>
-        </div>
+      <div class="start container">
+        <h2>The Plant Club is for all of us!</h2>
+        <p>
+          From the seasoned gardener to the budding young family...or even the
+          busy professional that needs an escape from the norm; The Plant Club
+          is designed to satisfy the growing desire in everyone to make the
+          world around us a more tranquil & beautiful place. We look forward to
+          you joining our family of plant lovers.
+        </p>
+        <button type="button">Get Start</button>
+      </div>
     </main>
 
     <footer class="container">
-        <div class="left container">
-            <h3>Find us around the web</h3>
-            <div class="social-media container">
-                <div class="image-container">
-                    <img src="./resources/images/5340248_ig_instagram_photo_icon.png">
-                </div>
-                <div class="image-container">
-                    <img src="./resources/images/5340250_book_face_facebook_fb_icon.png">
-                </div>
-                <div class="image-container">
-                    <img src="./resources/images/5340279_play_video_youtube_youtuber_icon.png">
-                </div>
-            </div>
+      <div class="left container">
+        <h3>Find us around the web</h3>
+        <div class="social-media container">
+          <div class="image-container">
+            <img src="./resources/images/5340248_ig_instagram_photo_icon.png" />
+          </div>
+          <div class="image-container">
+            <img
+              src="./resources/images/5340250_book_face_facebook_fb_icon.png"
+            />
+          </div>
+          <div class="image-container">
+            <img
+              src="./resources/images/5340279_play_video_youtube_youtuber_icon.png"
+            />
+          </div>
         </div>
+      </div>
 
-        <div class="image-container logo">
-            <img src="./resources/images/logo.png" title="The Plant Club">
-        </div>
-        
-        <div class="right container">
-            <h3>Let's get acquainted</h3>
-            <ul class="navigation">
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-        </div>
+      <div class="image-container logo">
+        <img src="./resources/images/logo.png" title="The Plant Club" />
+      </div>
+
+      <div class="right container">
+        <h3>Let's get acquainted</h3>
+        <ul class="navigation">
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
